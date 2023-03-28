@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Pemahaman Tentang Budaya Pemerkosaan (Rape Culture)Catcalling</h1>
+        <p id="description" class="description text-center">
+          Terimakasih telah memberikan waktu anda untuk mengisi survey ini
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nama</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Tuliskan nama lengkapmu"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Tuliskan alamat emailmu"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Jenjang pendidikanmu saat ini?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA">SMA</option>
+            <option value="Kuliah">Kuliah</option>
+            <option value="Dewasa">Bekerja/Dewasa</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Apakah kamu tau tentang rape  culture?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="sudah"
+              type="radio"
+              class="input-radio"
+              checked
+            />Sudah Tahu dan paham</label
+          >
+          <label>
+            <input
+              name="pengetahun1"
+              value="sudah-belum"
+              type="radio"
+              class="input-radio"
+            checked
+            />Sudah tahu tetapi belum mengerti</label
+          >
+
+          <label
+            ><input
+              name="pengetahuan1"
+              value="belum"
+              type="radio"
+              class="input-radio"
+            />Belum tahu sama sekali</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Rape Culture adalah budaya pemerkosaan yang dapat menimpa semua gender. dalam piramida rape culture. lapisan paling bawah adalah catcalling. catcalling adalah panggilan/sapaan dengan intonasi/gerakan tubuh yang mengarah kepada seksual dan biasanya terjadi ketika kita berjalan dikeramaian.contohnya ketika kamu sedang melewati gang komplek, ada sekumpulan orang yang menyapa kamu dengan panggilan "hi cantik " dan bersiul dengan gerakan mata yang menggoda kamu. setelah itu kamu tidak merasa nyaman. Apakah kamu pernah mengalaminya? </p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="Pernah dan sering">Pernah dan Sering</option>
+            <option value="Pernah dan jarang">Pernah dan Jarang</option>
+            <option value="Tidak Pernah">Tidak Pernah</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            Apa tindakan kamu setelah/jika  terjadi peristiwa itu?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label
+            ><input
+              name="prefer"
+              value="cuek"
+              type="checkbox"
+              class="input-checkbox"
+            />Diam saja dan cuek</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Merasa risih"
+              type="checkbox"
+              class="input-checkbox"
+            />Merasa risih</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="diam dan gemetar"
+              type="checkbox"
+              class="input-checkbox"
+            />Diam dan Gemetar</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="berhenti"
+              type="checkbox"
+              class="input-checkbox"
+            />Meminta dia untuk berhenti karena kamu tidak nyaman</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Meminta Perlindungan orang lain di sekitar kamu, karena kamu takut jika dia mendekat</label>
+        </div>
+        <div class="form-group">
+          <p>Apa respon mu jika melihat teman mu mengalami catcalling dan teman mu merasa tidak nyaman?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Tuliskan Pendapat Kamu Disini......"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
